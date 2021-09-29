@@ -129,72 +129,131 @@
       <div class="container">
         <div class="columns">
           <main class="main-column">
-<div class="card">
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      java 中的命名规则
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2021-09-29T03:42:41.070Z" style="display: flex; align-items: center;">
+      <i class="iconfont icon-calendar" style="margin-right: 2px;"></i>
+      <span>2021-09-29</span>
+    </time>
+    
+    <span class="dot"></span>
+    
+    <a href="/categories/CoreJava/" class="post-meta-link">CoreJava</a>
+    
+    
+    
+    <span class="dot"></span>
+    <span>335 字</span>
+    
+  </div>
   
-  <article class="card card-content">
-    <a href="/2021/09/29/1.基本类型/">
-      <h1 class="post-title">
-        
-      </h1>
-    </a>
-    <div class="card-excerpt">
+  <div class="post-meta post-show-meta" style="margin-top: -10px;">
+    <div style="display: flex; align-items: center;">
+      <i class="iconfont icon-biaoqian" style="margin-right: 2px; font-size: 1.15rem;"></i>
       
-      1. java 中的类型Java 是一种静...
+      
+        <a href="/tags/命名规则/" class="post-meta-link">命名规则</a>
       
     </div>
-    <div class="card-post-footer">
-      <div class="post-meta">
-        <time datetime="2021-09-29T03:42:41.070Z" style="display: flex; align-items: center;">
-          <i class="iconfont icon-calendar" style="margin-right: 2px;"></i>
-          <span>2021-09-29</span>
-        </time>
-        
-        
-        <span class="dot"></span>
-        <span>1.1k 字</span>
+  </div>
+  
+  </header>
+  <div id="section" class="post-content">
+    <p>项目名、包名、类名、变量名、常量名和方法名的命名规范。</p>
+<span id="more"></span>
+
+
+
+<p>创建一个项目之后，子类中的东西命名规范如下：</p>
+<ul>
+<li><strong>项目名</strong>全部小写，多个单词中间用<code>-</code>连接</li>
+<li><strong>包名</strong>全部小写</li>
+<li><strong>类名</strong>首字母大写，其余组成词首字母依次大写（大驼峰命名）</li>
+<li><strong>变量名</strong>、<strong>方法名</strong>首字母小写，其余组成词的首字母都要大写（小驼峰命名）</li>
+<li><strong>常量名</strong>全部大写，多个单词中间用<code>_</code>连接</li>
+</ul>
+<p>所有命名规则必须遵循Java本身的规则：</p>
+<ul>
+<li>名称只能由字母、数字、下划线、$符号组成</li>
+<li>不能以数字开头</li>
+<li>名称不能使用 Java 中的关键字</li>
+<li>坚决不允许出现中文及拼音命名</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>约束</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>项目名</td>
+<td>全部小写，多个单词用中划线【**-**】分隔</td>
+<td>spring-cloud</td>
+</tr>
+<tr>
+<td>包名</td>
+<td>全部小写</td>
+<td>com.company</td>
+</tr>
+<tr>
+<td>类名</td>
+<td>单词首字母大写，其余组成词首字母依次大写（大驼峰命名）</td>
+<td>PaintFigure</td>
+</tr>
+<tr>
+<td>变量名</td>
+<td>首字母小写，多个单词组成时，除首个单词，其他单词首字母都要大写</td>
+<td>password、userName</td>
+</tr>
+<tr>
+<td>常量名</td>
+<td>全部大写，多个单词，用【**_**】分隔</td>
+<td>EXAM_TIME</td>
+</tr>
+<tr>
+<td>方法名</td>
+<td>首字母小写，其余组成词的首字母都要大写（小驼峰命名）</td>
+<td>createExam</td>
+</tr>
+</tbody></table>
+
+  </div>
+  <div>
+  
+  <div class="post-note note-warning copyright" style="margin-top: 42px">
+    <p><span style="font-weight: bold;">作者：</span><a target="_blank" rel="nofollow noopener noreferrer" href="https://maxseal.github.io/about">MaxSeal</a></p>
+    <p><span style="font-weight: bold;">文章链接：</span><a target="_blank" rel="nofollow noopener noreferrer" href="https://maxseal.github.io/2021/09/29/2.%20java%20%E4%B8%AD%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/">https://maxseal.github.io/2021/09/29/2.%20java%20%E4%B8%AD%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/</a></p>
+    <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
+  </div>
+  
+  </div>
+</article>
+<div class="nav">
+  
+  <div class="nav-item-prev">
+    <a href="/2021/09/29/1.基本类型/" class="nav-link">
+      <i class="iconfont icon-left nav-prev-icon"></i>
+      <div>
+        <div class="nav-label">上一篇</div>
         
       </div>
-      <a href="/2021/09/29/1.%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/">继续阅读 </a>
-    </div>
-  </article>
-</div>
-
-<div class="card">
-  
-  <article class="card card-content">
-    <a href="/2021/09/29/2. java 中的命名规范/">
-      <h1 class="post-title">
-        java 中的命名规则
-      </h1>
     </a>
-    <div class="card-excerpt">
-      
-      项目名、包名、类名、变量名、常量名和方法名的命名规范。
-      
-    </div>
-    <div class="card-post-footer">
-      <div class="post-meta">
-        <time datetime="2021-09-29T03:42:41.070Z" style="display: flex; align-items: center;">
-          <i class="iconfont icon-calendar" style="margin-right: 2px;"></i>
-          <span>2021-09-29</span>
-        </time>
-        
-        <span class="dot"></span>
-        
-        <a href="categories/CoreJava/" class="post-meta-link">CoreJava</a>
-        
-        
-        
-        <span class="dot"></span>
-        <span>335 字</span>
-        
-      </div>
-      <a href="/2021/09/29/2.%20java%20%E4%B8%AD%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/">继续阅读 </a>
-    </div>
-  </article>
+  </div>
+  
+  
 </div>
 
-</main>
+<div class="card card-content toc-card" id="mobiletoc">
+  <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+
+</div></main>
           <aside class="left-column">
             
             <div class="card card-author">
@@ -222,6 +281,13 @@
             
             <div class="sticky-tablet">
   
+  
+  <article class="display-when-two-columns spacer">
+    <div class="card card-content toc-card">
+      <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+
+    </div>
+  </article>
   
   
   <article class="card card-content">
@@ -252,38 +318,16 @@
   </article>
   
   
-  <article class="card card-content widescreen-archive">
-    <div class="archive-card">
-  <div class="archive-card-header"><i class="iconfont icon-wodebaobiao" style="padding-right: 2px;"></i>归档</div>
-  <div class="archive-card-list">
-    
-    
-    
-      
-        
-        
-        
-      
-    
-      
-        
-      
-    
-    
-      <a href="/archives/2021" class="archive-card-list-item">
-          2021
-          <span class="archive-card-list-item-badge">2</span>
-      </a>
-    
-  </div>
-</div>
-  </article>
-  
 </div>
           </aside>
           <aside class="right-column">
             <div class="sticky-widescreen">
   
+  
+  <article class="card card-content toc-card">
+    <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+
+  </article>
   
   
   <article class="card card-content">
@@ -305,33 +349,6 @@
 </div>
   </article>
   
-  
-  <article class="card card-content">
-    <div class="archive-card">
-  <div class="archive-card-header"><i class="iconfont icon-wodebaobiao" style="padding-right: 2px;"></i>归档</div>
-  <div class="archive-card-list">
-    
-    
-    
-      
-        
-        
-        
-      
-    
-      
-        
-      
-    
-    
-      <a href="/archives/2021" class="archive-card-list-item">
-          2021
-          <span class="archive-card-list-item-badge">2</span>
-      </a>
-    
-  </div>
-</div>
-  </article>
   
 </div>
           </aside>
